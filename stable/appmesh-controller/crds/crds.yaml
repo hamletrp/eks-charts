@@ -135,7 +135,7 @@ spec:
             properties:
               awsName:
                 description: AWSName is the AppMesh GatewayRoute object's name. If
-                  unspecified or empty, it defaults to be "${name}_${namespace}" of
+                  unspecified or empty, it defaults to be of
                   k8s GatewayRoute
                 type: string
               grpcRoute:
@@ -926,7 +926,7 @@ spec:
             properties:
               awsName:
                 description: AWSName is the AppMesh Mesh object's name. If unspecified
-                  or empty, it defaults to be "${name}" of k8s Mesh
+                  or empty, it defaults to be of k8s Mesh
                 type: string
               egressFilter:
                 description: The egress filter rules for the service mesh. If unspecified,
@@ -995,8 +995,8 @@ spec:
                   matchLabels:
                     additionalProperties:
                       type: string
-                    description: matchLabels is a map of {key,value} pairs. A single
-                      {key,value} in the matchLabels map is equivalent to an element
+                    description: matchLabels is a map of pairs. A single
+                       in the matchLabels map is equivalent to an element
                       of matchExpressions, whose key field is "key", the operator
                       is "In", and the values array contains only "value". The requirements
                       are ANDed.
@@ -1104,7 +1104,7 @@ spec:
             properties:
               awsName:
                 description: AWSName is the AppMesh VirtualGateway object's name.
-                  If unspecified or empty, it defaults to be "${name}_${namespace}"
+                  If unspecified or empty, it defaults to be
                   of k8s VirtualGateway
                 type: string
               backendDefaults:
@@ -1282,8 +1282,8 @@ spec:
                   matchLabels:
                     additionalProperties:
                       type: string
-                    description: matchLabels is a map of {key,value} pairs. A single
-                      {key,value} in the matchLabels map is equivalent to an element
+                    description: matchLabels is a map of  pairs. A single
+                      in the matchLabels map is equivalent to an element
                       of matchExpressions, whose key field is "key", the operator
                       is "In", and the values array contains only "value". The requirements
                       are ANDed.
@@ -1658,8 +1658,8 @@ spec:
                   matchLabels:
                     additionalProperties:
                       type: string
-                    description: matchLabels is a map of {key,value} pairs. A single
-                      {key,value} in the matchLabels map is equivalent to an element
+                    description: matchLabels is a map of pairs. A single
+                      in the matchLabels map is equivalent to an element
                       of matchExpressions, whose key field is "key", the operator
                       is "In", and the values array contains only "value". The requirements
                       are ANDed.
@@ -1705,8 +1705,8 @@ spec:
                   matchLabels:
                     additionalProperties:
                       type: string
-                    description: matchLabels is a map of {key,value} pairs. A single
-                      {key,value} in the matchLabels map is equivalent to an element
+                    description: matchLabels is a map of pairs. A single
+                      in the matchLabels map is equivalent to an element
                       of matchExpressions, whose key field is "key", the operator
                       is "In", and the values array contains only "value". The requirements
                       are ANDed.
@@ -1814,7 +1814,7 @@ spec:
             properties:
               awsName:
                 description: AWSName is the AppMesh VirtualNode object's name. If
-                  unspecified or empty, it defaults to be "${name}_${namespace}" of
+                  unspecified or empty, it defaults to be of
                   k8s VirtualNode
                 type: string
               backendDefaults:
@@ -2745,8 +2745,8 @@ spec:
                   matchLabels:
                     additionalProperties:
                       type: string
-                    description: matchLabels is a map of {key,value} pairs. A single
-                      {key,value} in the matchLabels map is equivalent to an element
+                    description: matchLabels is a map of pairs. A single
+                      in the matchLabels map is equivalent to an element
                       of matchExpressions, whose key field is "key", the operator
                       is "In", and the values array contains only "value". The requirements
                       are ANDed.
@@ -2919,7 +2919,7 @@ spec:
             properties:
               awsName:
                 description: AWSName is the AppMesh VirtualRouter object's name. If
-                  unspecified or empty, it defaults to be "${name}_${namespace}" of
+                  unspecified or empty, it defaults to be of
                   k8s VirtualRouter
                 type: string
               listeners:
@@ -4027,7 +4027,7 @@ spec:
             properties:
               awsName:
                 description: AWSName is the AppMesh VirtualService object's name.
-                  If unspecified or empty, it defaults to be "${name}.${namespace}"
+                  If unspecified or empty, it defaults to be
                   of k8s VirtualService
                 type: string
               meshRef:
